@@ -1,0 +1,11 @@
+__pycache__
+.history
+.hypothesis/
+.venv/
+.vscode/
+build/
+docs/_build
+reports/
+venv/
+.ipynb_checkpoints
+pooldata.json

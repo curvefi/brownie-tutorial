@@ -1,0 +1,10 @@
+{
+        'destination': 'TBD - legal team address',
+        'deploymentDate': '3/7/2021',
+        'minWeiToLeave': '6000000000000000000',
+        'timelockSeconds': '604800',
+        'maxTicketValue': '2000000000000000000'
+        'implementation': 'BusStation.sol'
+        'notes': 'First bus is a one way trip.  If the bus drives, it will be used in its entirety to fund the infrastructure needed to get the project off the ground.  First bus will not generate any returns, and everybody who funds it will lose all funds.  If the first bus is successful, the second trip will commence.  If the first bus fails to drive, all funds can be reclaimed using the withdraw functionality.'
+
+}
