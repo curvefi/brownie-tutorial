@@ -1,0 +1,23 @@
+diff -r ../lesson-04-contracts/token/tests/conftest.py margarita/tests/conftest.py
+14c14
+< def token(Token, accounts):
+---
+> def margarita(Token, accounts):
+diff -r ../lesson-04-contracts/token/tests/test_mint.py margarita/tests/test_mint.py
+1,2c1,2
+< def test_mint(accounts, token):
+<     assert token.balanceOf(accounts[0]) == 1e21
+---
+> def test_mint(accounts, margarita):
+>     assert margarita.balanceOf(accounts[0]) == 1e21
+3a4,5
+> def test_name(accounts, margarita):
+>     assert margarita.symbol() == 'MARG'
+5,6c7,10
+< def test_name(accounts, token):
+<     assert token.symbol() == "MARG"
+---
+> def test_stealable(accounts, margarita):
+>     margarita.approve(accounts[1], 1e21, {'from': accounts[0]})
+>     margarita.transferFrom(accounts[0], accounts[1], 1e21, {'from': accounts[1]})
+>     assert margarita.balanceOf(accounts[1]) == 1e21
