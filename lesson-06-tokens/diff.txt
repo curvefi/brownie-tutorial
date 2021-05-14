@@ -1,0 +1,2 @@
+Only in margarita: interfaces
+Only in margarita/scripts: stake.py
