@@ -1,0 +1,2 @@
+Only in margarita/interfaces: LiquidityGauge.json
+Files margarita/scripts/stake.py and ../lesson-06-tokens/margarita/scripts/stake.py differ
