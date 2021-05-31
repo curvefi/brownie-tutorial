@@ -1,0 +1,14 @@
+diff -r margarita/tests/conftest.py ../lesson-07-interfaces/margarita/tests/conftest.py
+15,25c15
+< 
+< 
+< @pytest.fixture(scope="module")
+< def alice(accounts):
+<     return accounts[0]
+< 
+< 
+< @pytest.fixture(scope="module")
+< def bob(accounts):
+<     return accounts[1]
+---
+Only in margarita/tests: test_curve.py

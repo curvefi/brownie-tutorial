@@ -13,8 +13,8 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 5: Transactions](/lesson-05-transactions)
 * [Lesson 6: Tokens](/lesson-06-tokens)
 * [Lesson 7: Interfaces](/lesson-07-interfaces)
-
+* [Lesson 8: Testing Fixtures I](/lesson-08-fixtures-i)
 
 ## In the Oven
-* Lesson 8: Testing Fixtures
-* Lesson 9: Parametrized Testing
+* Lesson 9: Testing Fixtures II
+* Lesson 10: Parametrized Testing
