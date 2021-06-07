@@ -1,0 +1,54 @@
+diff -r margarita/tests/conftest.py ../lesson-08-fixtures-i/margarita/tests/conftest.py
+4,5d3
+< from brownie import Contract
+< from brownie_tokens import MintableForkToken
+28,63d25
+< 
+< 
+< def load_contract(addr):
+<     try:
+<         cont = Contract(addr)
+<     except ValueError:
+<         cont = Contract.from_explorer(addr)
+<     return cont
+< 
+< 
+< @pytest.fixture(scope="module")
+< def registry():
+<     return load_contract("0x90E00ACe148ca3b23Ac1bC8C240C2a7Dd9c2d7f5")
+< 
+< 
+< @pytest.fixture(scope="module")
+< def tripool(registry):
+<     return load_contract(registry.pool_list(0))
+< 
+< 
+< @pytest.fixture(scope="module")
+< def tripool_lp_token(registry, tripool):
+<     return load_contract(registry.get_lp_token(tripool))
+< 
+< 
+< @pytest.fixture(scope="module")
+< def tripool_funded(registry, alice, tripool):
+<     dai_addr = registry.get_coins(tripool)[0]
+<     dai = MintableForkToken(dai_addr)
+<     amount = 1e21
+<     dai.approve(tripool, amount, {"from": alice})
+<     dai._mint_for_testing(alice, amount)
+< 
+<     amounts = [amount, 0, 0]
+<     tripool.add_liquidity(amounts, 0, {"from": alice})
+<     return tripool
+diff -r margarita/tests/test_curve.py ../lesson-08-fixtures-i/margarita/tests/test_curve.py
+3,13d2
+< 
+< def test_tripool_initially_unfunded(
+<         tripool_lp_token, alice
+<     ):
+<     assert tripool_lp_token.balanceOf(alice) == 0
+< 
+< 
+< def test_tripool_funded(
+<         tripool_lp_token, alice, tripool_funded
+<     ):
+<     assert tripool_lp_token.balanceOf(alice) > 0
