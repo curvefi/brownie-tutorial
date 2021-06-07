@@ -1,4 +1,4 @@
-# Interfaces
+# Fixtures
 
 ## [🎥 Video 8: Fixtures 1 🎬](https://youtu.be/YrGuC45GkQc)
 
