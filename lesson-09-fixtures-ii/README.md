@@ -40,5 +40,4 @@ Contract used to locate all active Curve contracts and perform high level intera
 
 ## CURVE TRIPOOL
 Core [Curve pool](https://curve.fi/3pool) allowing staking and transactions among DAI, USDC, and Tether stablecoins.  [DAI](https://etherscan.io/token/0x6B175474E89094C44Da98b954EedeAC495271d0F) is a decentralized stablecoin currently pegged to the value of the US dollar created by [MakerDAO](https://makerdao.com/)
-# 
 
