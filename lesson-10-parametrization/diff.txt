@@ -1,0 +1,7 @@
+Only in margarita/tests: integrative
+Only in ../lesson-09-fixtures-ii/margarita/tests: test_approve.py
+Only in ../lesson-09-fixtures-ii/margarita/tests: test_curve.py
+Only in ../lesson-09-fixtures-ii/margarita/tests: test_mint.py
+Only in ../lesson-09-fixtures-ii/margarita/tests: test_transfer.py
+Only in ../lesson-09-fixtures-ii/margarita/tests: test_transferFrom.py
+Only in margarita/tests: unitary

@@ -15,6 +15,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 7: Interfaces](/lesson-07-interfaces)
 * [Lesson 8: Testing Fixtures I](/lesson-08-fixtures-i)
 * [Lesson 9: Testing Fixtures II](/lesson-09-fixtures-ii)
+* [Lesson 10: Parametrized Testing](/lesson-10-parametrization)
 
 ## In the Oven
-* Lesson 10: Parametrized Testing
+* Lesson 11: Chain

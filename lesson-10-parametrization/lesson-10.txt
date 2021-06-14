@@ -1,0 +1,75 @@
+As before -- same fonts and styles, intro and outro videos.  Text is below, along with other notes. 
+Also prune some of the excess space around the active window
+
+7:56 Pop up the red X with buzzer sound
+
+Again we'll have green checkmarks, but this time we'll try something funky.
+We'll in total have 10 checkmarks, so leave space on the screen
+Checkmarks one through four will appear at:
+8:33, 8:38, 8:43, 9:15  Pop up the green checkmark (noise at a level that doesn't overly drown out the speaker)
+From 9:10 through 13:38 there is a lot of silence... speed it up to run on very fast motion
+Fast as in a slapstick comedy pace (with music if it fits)
+Pop up the remaining 6 checkmarks throughout.
+
+
+
+
+0:08 During the break (After speaker says "PyTest's parametrization.") pop up a title card like video 7
+Feel free to leave the title screen up for a couple of seconds longer.  
+Just note that all the timestamps below are for the original video.
+Title card text:
+Lesson 10: Parametrized Testing
+
+
+Delete from 0:42 to 0:44 -- when the screen intially changes there is some garbage that is cleared out by 0:44.  Make speaker transition as natural as possible
+Also -- next timestamps still refer to original video, not the video after this deletion.
+
+From the beginning through 7:42, blur out the "389343ffd..." sitting in the righthand pane.  
+It reappears lower in the frame from 7:43 until 7:57.
+It returns at 8:18 through the end of the video.
+
+
+
+Card Popover text:
+
+0:55 
+# TEST STRUCTURE
+# Parametrized tests are slow, so they are often stored 
+# in a different directory and run separately.
+$ brownie test test/unitary       # Non-Parametrized Tests
+$ brownie test test/integrative   # Parametrized Tests
+
+
+2:45
+# PARAMETRIZATION DECORATION
+# Pass parameters to your tests by calling the decorator
+> @pytest.mark.parametrize('i', <strategy>)
+> def test_parametrized(i):
+> 	...
+
+3:25
+# REGISTRY GET COIN SWAP COMPLEMENT
+# Return the pool at offset <i> from all Curve pools using a particular coin
+> registry.get_coin_swap_complement(<coin>, <i>)
+
+3:48
+# REGISTRY FIND POOL FOR COINS
+# Find the corresponding Curve pool for two coins.
+> registry.find_pool_for_coins(<coin1>, <coin2>)
+
+
+5:25
+# REGISTRY GET_N_COINS
+# Get the number of coins in a Curve pool
+> registry.get_n_coins(<curve_pool_addr>)
+
+5:44
+# REGISTRY GET_COIN_INDICES
+# Find the coin index within a Curve pool
+> registry.get_coin_indices(
+>	<curve_pool>,
+>	<first_coin>,
+>	<second_coin>)
+
+
+
