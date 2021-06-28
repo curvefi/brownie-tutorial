@@ -17,7 +17,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 9: Testing Fixtures II](/lesson-09-fixtures-ii)
 * [Lesson 10: Parametrized Testing](/lesson-10-parametrization)
 * [Lesson 11: Chain I](/lesson-11-chain-i)
-* [Lesson 12: Chain I](/lesson-12-chain-ii)
+* [Lesson 12: Chain II](/lesson-12-chain-ii)
 
 ## In the Oven
 * Lesson 13: Strategy
