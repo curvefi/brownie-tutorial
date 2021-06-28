@@ -1,0 +1,5 @@
+# exclude SafeMath when calculating test coverage
+# https://eth-brownie.readthedocs.io/en/v1.10.3/config.html#exclude_paths
+reports:
+  exclude_contracts:
+    - SafeMath
