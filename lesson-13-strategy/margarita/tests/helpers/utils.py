@@ -4,6 +4,8 @@ from brownie import *
 
 
 def load_contract(addr):
+    if addr == ZERO_ADDRESS:
+        return None
     try:
         cont = Contract(addr)
     except ValueError:
