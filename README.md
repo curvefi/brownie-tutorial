@@ -19,6 +19,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 11: Chain I](/lesson-11-chain-i)
 * [Lesson 12: Chain II](/lesson-12-chain-ii)
 * [Lesson 13: Strategy](/lesson-13-strategy)
+* [Lesson 14: Networks](/lesson-14-networks)
 
 ## In the Oven
-* Lesson 14: Networks
+* Lesson 14

@@ -1,0 +1,107 @@
+development:
+- cmd: ganache-cli
+  cmd_settings:
+    accounts: 10
+    evm_version: istanbul
+    gas_limit: 12000000
+    mnemonic: brownie
+    port: 8545
+  host: http://127.0.0.1
+  id: development
+  name: Ganache-CLI
+- cmd: ethnode
+  cmd_settings:
+    port: 8545
+  host: http://127.0.0.1
+  id: geth-dev
+  name: Geth Dev
+- cmd: ganache-cli
+  cmd_settings:
+    accounts: 10
+    evm_version: istanbul
+    fork: mainnet
+    gas_limit: 12000000
+    mnemonic: brownie
+    port: 8545
+  host: http://127.0.0.1
+  id: mainnet-fork
+  name: Ganache-CLI (Mainnet Fork)
+  timeout: 120
+- cmd: ganache-cli
+  cmd_settings:
+    accounts: 10
+    evm_version: istanbul
+    fork: bsc-main
+    gas_limit: 12000000
+    mnemonic: brownie
+    port: 8545
+  host: http://127.0.0.1
+  id: bsc-main-fork
+  name: Ganache-CLI (BSC-Mainnet Fork)
+  timeout: 120
+live:
+- name: Ethereum
+  networks:
+  - chainid: 1
+    explorer: https://api.etherscan.io/api
+    host: https://mainnet.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+    id: mainnet
+    name: Mainnet (Infura)
+  - chainid: 3
+    explorer: https://api-ropsten.etherscan.io/api
+    host: https://ropsten.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+    id: ropsten
+    name: Ropsten (Infura)
+  - chainid: 4
+    explorer: https://api-rinkeby.etherscan.io/api
+    host: https://rinkeby.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+    id: rinkeby
+    name: Rinkeby (Infura)
+  - chainid: 5
+    explorer: https://api-goerli.etherscan.io/api
+    host: https://goerli.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+    id: goerli
+    name: Goerli (Infura)
+  - chainid: 42
+    explorer: https://api-kovan.etherscan.io/api
+    host: https://kovan.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+    id: kovan
+    name: Kovan (Infura)
+- name: Ethereum Classic
+  networks:
+  - chainid: 61
+    explorer: https://blockscout.com/etc/mainnet/api
+    host: https://www.ethercluster.com/etc
+    id: etc
+    name: Mainnet
+  - chainid: 6
+    explorer: https://blockscout.com/etc/kotti/api
+    host: https://www.ethercluster.com/kotti
+    id: kotti
+    name: Kotti
+- name: Binance Smart Chain
+  networks:
+  - chainid: 97
+    explorer: https://api-testnet.bscscan.com/api
+    host: https://data-seed-prebsc-1-s1.binance.org:8545
+    id: bsc-test
+    name: Testnet
+  - chainid: 56
+    explorer: https://api.bscscan.com/api
+    host: https://bsc-dataseed.binance.org
+    id: bsc-main
+    name: Mainnet
+- name: Polygon
+  networks:
+  - chainid: 137
+    explorer: https://api.polygonscan.com/api
+    host: https://rpc-mainnet.matic.network/
+    id: polygon
+    name: polygon
+- name: Fantom
+  networks:
+  - chainid: 250
+    explorer: https://api.ftmscan.com/api
+    host: https://rpcapi.fantom.network
+    id: fantom
+    name: fantom
