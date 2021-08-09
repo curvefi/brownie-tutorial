@@ -22,7 +22,8 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 14: Networks](/lesson-14-networks)
 * [Lesson 15: Gas](/lesson-15-gas)
 * [Lesson 16: Alias](/lesson-16-alias) 
+* [Lesson 17: Applications I](/lesson-17-applications-i) 
 
 ## In the Oven
-* Convex
+* TriCrypto
 * Zappers
