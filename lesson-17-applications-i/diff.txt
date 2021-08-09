@@ -1,0 +1,12 @@
+Only in margarita/scripts: compare_crv_to_cvx.py
+Only in margarita/scripts: crv_vs_cvx.py
+Only in margarita/scripts: curve_alias.py
+diff -r margarita/scripts/helpers/utils.py ../lesson-15-gas/margarita/scripts/helpers/utils.py
+124,130d123
+< 
+< 
+< def pool_name_from_lp(lp):
+<     r = load_registry()
+<     pool_addr = r.get_pool_from_lp_token(lp)
+<     return r.get_pool_name(pool_addr)
+< 
