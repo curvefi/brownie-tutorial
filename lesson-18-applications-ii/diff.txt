@@ -1,0 +1,30 @@
+Only in margarita/scripts: arb.py
+Only in margarita/scripts: tri_balances.py
+Only in margarita/scripts: tri_nuke.py
+diff -r ../lesson-17-applications-i/margarita/tests/conftest.py margarita/tests/conftest.py
+61a62,84
+> 
+> @pytest.fixture(scope="module")
+> def tricrypto():
+>     return Contract('tricrypto')
+> 
+> @pytest.fixture(scope="module")
+> def tricrypto_lp():
+>     return Contract('tricrypto_lp')
+> 
+> 
+> 
+> @pytest.fixture(scope="module")
+> def tether():
+>     return MintableForkToken('tether')
+> 
+> @pytest.fixture(scope="module")
+> def weth():
+>     return MintableForkToken('weth')
+> 
+> @pytest.fixture(scope="module")
+> def sushi():
+>     return Contract('sushi_router')
+> 
+Only in margarita/tests/helpers: nukes.py
+Only in margarita/tests/integrative: test_nuke.py
