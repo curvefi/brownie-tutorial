@@ -24,7 +24,9 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 16: Alias](/lesson-16-alias) 
 * [Lesson 17: Applications I](/lesson-17-applications-i) 
 * [Lesson 18: Applications II](/lesson-18-applications-ii) 
+* [Lesson 19: Applications III](/lesson-19-applications-iii) 
 
 ## In the Oven
-* Rewards
+* MultiCall
+* React
 * Zappers
