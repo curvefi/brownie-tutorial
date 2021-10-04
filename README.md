@@ -26,6 +26,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 18: Applications II](/lesson-18-applications-ii) 
 * [Lesson 19: Applications III](/lesson-19-applications-iii) 
 * [Lesson 20: MultiCall](/lesson-20-multicall)
+* [Lesson 21: Deployment](/lesson-21-deployment)
 
 ## In the Oven
 * React
