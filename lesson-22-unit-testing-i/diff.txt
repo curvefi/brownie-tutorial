@@ -1,0 +1,31 @@
+Files margarita/brownie-config.yaml and ../lesson-20-multicall/margarita/brownie-config.yaml differ
+Only in margarita/contracts: Stake.vy
+Only in ../lesson-20-multicall/margarita/interfaces: LiquidityGauge.json
+Only in ../lesson-20-multicall/margarita/interfaces: crossasset.abi
+Only in ../lesson-20-multicall/margarita/scripts: arb.py
+Only in ../lesson-20-multicall/margarita/scripts: compare_crv_to_cvx.py
+Only in ../lesson-20-multicall/margarita/scripts: crv_vs_cvx.py
+Only in ../lesson-20-multicall/margarita/scripts: curve_alias.py
+Only in margarita/scripts: deploy.py
+Only in ../lesson-20-multicall/margarita/scripts: dispense.py
+Only in ../lesson-20-multicall/margarita/scripts: gas.py
+Only in ../lesson-20-multicall/margarita/scripts: reward-multicall.py
+Only in ../lesson-20-multicall/margarita/scripts: reward-native.py
+Only in ../lesson-20-multicall/margarita/scripts: rewards.py
+Only in ../lesson-20-multicall/margarita/scripts: stake.py
+Only in ../lesson-20-multicall/margarita/scripts: token.py
+Only in ../lesson-20-multicall/margarita/scripts: tri_balances.py
+Only in ../lesson-20-multicall/margarita/scripts: tri_nuke.py
+Files margarita/setup.cfg and ../lesson-20-multicall/margarita/setup.cfg differ
+Files margarita/tests/conftest.py and ../lesson-20-multicall/margarita/tests/conftest.py differ
+Only in ../lesson-20-multicall/margarita/tests/integrative: test_3pool.py
+Only in ../lesson-20-multicall/margarita/tests/integrative: test_nuke.py
+Only in ../lesson-20-multicall/margarita/tests/integrative: test_rewards.py
+Only in margarita/tests/integrative: test_stake.py
+Only in margarita/tests/unitary: test_3pool.py
+Only in margarita/tests/unitary: test_admin.py
+Only in ../lesson-20-multicall/margarita/tests/unitary: test_approve.py
+Only in ../lesson-20-multicall/margarita/tests/unitary: test_curve.py
+Only in ../lesson-20-multicall/margarita/tests/unitary: test_mint.py
+Only in ../lesson-20-multicall/margarita/tests/unitary: test_transfer.py
+Only in ../lesson-20-multicall/margarita/tests/unitary: test_transferFrom.py

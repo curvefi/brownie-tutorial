@@ -1,0 +1,15 @@
+# exclude SafeMath when calculating test coverage
+# https://eth-brownie.readthedocs.io/en/v1.10.3/config.html#exclude_paths
+networks:
+    default: mainnet-fork
+    mainnet-fork:
+      gas_price: 990000000000
+
+
+reports:
+  exclude_contracts:
+    - SafeMath
+
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.2.0
+
