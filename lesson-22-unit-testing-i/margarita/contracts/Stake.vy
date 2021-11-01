@@ -40,8 +40,6 @@ interface AddressProvider:
 address_provider: public(AddressProvider)
 registry: public(Registry)
 
-owner: public(address)
-
 # INTERNAL FUNCTIONS
 
 
@@ -107,7 +105,6 @@ def __init__(address_provider: address):
     """
     self.address_provider = AddressProvider(address_provider)
     self.registry = Registry(self.address_provider.get_registry())
-    self.owner = msg.sender
 
 # EXTERNAL FUNCTIONS
 
@@ -169,7 +166,6 @@ def claim_erc20(coin_addr: address):
     @notice Drain all ERC20 tokens to your address
     @param coin_addr Address of ERC20 Token
     """
-    assert self.owner == msg.sender # dev: Only Owner
     ERC20(coin_addr).transfer(msg.sender, ERC20(coin_addr).balanceOf(self))
 
 

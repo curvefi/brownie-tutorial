@@ -23,7 +23,6 @@ Only in ../lesson-20-multicall/margarita/tests/integrative: test_nuke.py
 Only in ../lesson-20-multicall/margarita/tests/integrative: test_rewards.py
 Only in margarita/tests/integrative: test_stake.py
 Only in margarita/tests/unitary: test_3pool.py
-Only in margarita/tests/unitary: test_admin.py
 Only in ../lesson-20-multicall/margarita/tests/unitary: test_approve.py
 Only in ../lesson-20-multicall/margarita/tests/unitary: test_curve.py
 Only in ../lesson-20-multicall/margarita/tests/unitary: test_mint.py
