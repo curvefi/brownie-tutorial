@@ -29,7 +29,8 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 21: Deployment](/lesson-21-deployment)
 * [Lesson 22: Unit Testing I](/lesson-22-unit-testing-i)
 * [Lesson 23: Reverts](/lesson-23-reverts)
-* [Lesson 24: Interactive Debugging](/lesson-24-interactive)
+* [Lesson 24: Interactive Debugging I](/lesson-24-interactive-i)
+* [Lesson 25: Interactive Debugging II](/lesson-25-interactive-ii)
 
 ## In the Oven
 * React

@@ -1,0 +1,116 @@
+diff -r ../lesson-23-reverts/margarita/contracts/Stake.vy margarita/contracts/Stake.vy
+21a22,25
+>  
+> interface Curve2PoolUnderlying:
+>    def add_liquidity(amountsUnderlying: uint256[2], min_mint_amount: uint256, use_underlying: bool): nonpayable
+>    def remove_liquidity(_amountUnderlying: uint256, min_amounts: uint256[2]): nonpayable
+22a27,35
+> interface Curve3PoolUnderlying:
+>    def add_liquidity(amountsUnderlying: uint256[3], min_mint_amount: uint256, use_underlying: bool): nonpayable
+>    def remove_liquidity(_amountUnderlying: uint256, min_amounts: uint256[3]): nonpayable
+>    
+> interface Curve4PoolUnderlying:
+>    def add_liquidity(amountsUnderlying: uint256[4], min_mint_amount: uint256, use_underlying: bool): nonpayable
+>    def remove_liquidity(_amount: uint256, min_amounts: uint256[4]): nonpayable
+>    
+>   
+30a44
+>    def get_underlying_coins(_pool: address) -> address[8]: view
+47a62,68
+> @internal 
+> def _load_coins(pool_addr: address, use_underlying: bool) -> address[8]:
+>     if use_underlying == True:
+>             return self.registry.get_underlying_coins(pool_addr)
+>     else:
+>             return self.registry.get_coins(pool_addr)       
+> 
+49c70
+< def _get_coin_index(coin_addr: address, pool_addr: address) -> int256[2]:
+---
+> def _get_coin_index(coin_addr: address, pool_addr: address, use_underlying: bool) -> int256[2]:
+55c76
+<     coins: address[8] = self.registry.get_coins(pool_addr)
+---
+>     coins: address[8] = self._load_coins(pool_addr, use_underlying)
+69c90,93
+< def _add_liquidity(coin_addr: address, pool_addr: address):
+---
+> def _add_liquidity(
+>         coin_addr: address, 
+>         pool_addr: address, 
+>         use_underlying: bool):
+79c103
+<     coin_index: int256[2] = self._get_coin_index(coin_addr, pool_addr)
+---
+>     coin_index: int256[2] = self._get_coin_index(coin_addr, pool_addr, use_underlying)
+85c109,113
+<         Curve2Pool(pool_addr).add_liquidity(liq_arr, 0)
+---
+>         if use_underlying:
+>                 Curve2PoolUnderlying(pool_addr).add_liquidity(liq_arr, 0, True)
+>         else:
+>                 Curve2Pool(pool_addr).add_liquidity(liq_arr, 0)
+> 
+90c118,123
+<         Curve3Pool(pool_addr).add_liquidity(liq_arr, 0)
+---
+>         if use_underlying:
+>                 Curve3PoolUnderlying(pool_addr).add_liquidity(liq_arr, 0, True)
+>         else:
+>                 Curve3Pool(pool_addr).add_liquidity(liq_arr, 0)
+> 
+> 
+94c127,131
+<         Curve4Pool(pool_addr).add_liquidity(liq_arr, 0)
+---
+>         if use_underlying:
+>                 Curve4PoolUnderlying(pool_addr).add_liquidity(liq_arr, 0, True)
+>         else:
+>                 Curve4Pool(pool_addr).add_liquidity(liq_arr, 0)
+> 
+123c160,163
+<     if self.registry.is_meta(pool_addr):
+---
+>     if coin_addr in self.registry.get_coins(pool_addr):
+>         self._add_liquidity(coin_addr, pool_addr, False)
+> 
+>     elif self.registry.is_meta(pool_addr):
+126,127c166,169
+<         self._add_liquidity(coin_addr, metapool)
+<         self._add_liquidity(metapool_lp, pool_addr)
+---
+>         self._add_liquidity(coin_addr, metapool, False)
+>         self._add_liquidity(metapool_lp, pool_addr, False)
+>     elif coin_addr in self.registry.get_underlying_coins(pool_addr):
+>         self._add_liquidity(coin_addr, pool_addr, True)
+129c171
+<         self._add_liquidity(coin_addr, pool_addr)
+---
+>         assert False
+diff -r ../lesson-23-reverts/margarita/tests/conftest.py margarita/tests/conftest.py
+49c49
+<     dai._mint_for_testing(alice, 1_000_000 * 10 ** dai.decimals())
+---
+>     dai._mint_for_testing(alice, 5_000 * 10 ** dai.decimals())
+diff -r ../lesson-23-reverts/margarita/tests/integrative/test_stake.py margarita/tests/integrative/test_stake.py
+5c5,6
+< @given(pool_id=strategy("uint", min_value=0, max_value=41))
+---
+> 
+> @given(pool_id=strategy("uint", min_value=0, max_value=41, exclude=[4, 9, 16, 17, 21]))
+8c9,12
+<     coin_list = registry.get_coins(pool) + registry.get_underlying_coins(pool)
+---
+>     _coins = registry.get_coins(pool)
+>     _underlying = registry.get_underlying_coins(pool)
+>     coin_list = _coins + _underlying
+> 
+11,14c15,17
+<     if registry.get_pool_asset_type(pool) > 0:
+<         return
+<     dai.transfer(stake, dai.balanceOf(alice), {'from': alice})
+<     stake.ape(dai, pool, {'from': alice})
+---
+> 
+>     dai.transfer(stake, dai.balanceOf(alice), {"from": alice})
+>     stake.ape(dai, pool, {"from": alice})
