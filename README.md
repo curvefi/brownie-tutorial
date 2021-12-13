@@ -31,6 +31,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 23: Reverts](/lesson-23-reverts)
 * [Lesson 24: Interactive Debugging I](/lesson-24-interactive-i)
 * [Lesson 25: Interactive Debugging II](/lesson-25-interactive-ii)
+* [Lesson 26: Safety](/lesson-26-safety)
 
 ## In the Oven
 * React
