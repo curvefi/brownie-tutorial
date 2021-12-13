@@ -45,7 +45,7 @@ def main():
     # Convex
     # https://docs.convexfinance.com/convexfinance/faq/contract-addresses
     cvx = set_alias("0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B", "cvx")
-    cvx = set_alias("0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7", "cvxcrv")
+    cvxcrv = set_alias("0x62B9c7356A2Dc64a1969e19C23e4f579F9810Aa7", "cvxcrv")
     booster = set_alias("0xF403C135812408BFbE8713b5A23a04b3D48AAE31", "cvx_booster")
     staker = set_alias("0xCF50b810E57Ac33B91dCF525C6ddd9881B139332", "cvx_staker")
 
