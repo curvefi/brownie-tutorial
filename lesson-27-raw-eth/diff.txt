@@ -1,0 +1,3 @@
+Files ../lesson-25-interactive-ii/margarita/contracts/Stake.vy and margarita/contracts/Stake.vy differ
+Files ../lesson-25-interactive-ii/margarita/tests/conftest.py and margarita/tests/conftest.py differ
+Files ../lesson-25-interactive-ii/margarita/tests/integrative/test_stake.py and margarita/tests/integrative/test_stake.py differ
