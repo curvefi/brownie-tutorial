@@ -20,6 +20,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 12: Chain II](/lesson-12-chain-ii)
 * [Lesson 13: Strategy](/lesson-13-strategy)
 * [Lesson 14: Networks](/lesson-14-networks)
+* [Lesson 14b: Polygon](/lesson-14b-polygon)
 * [Lesson 15: Gas](/lesson-15-gas)
 * [Lesson 16: Alias](/lesson-16-alias) 
 * [Lesson 17: Applications I](/lesson-17-applications-i) 
@@ -36,5 +37,6 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 28: Routing I](/lesson-28-routing-i)
 
 ## In the Oven
+* Advanced Routing
 * React
 * Zappers

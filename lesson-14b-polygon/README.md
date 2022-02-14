@@ -1,6 +1,6 @@
 # Networks
 
-## [🎥 Video 14b: Polygon 🎬](https://youtu.be/S8gBMZtdsVM)
+## [🎥 Video 14b: Polygon 🎬](https://www.youtube.com/watch?v=toqMi41c-l4)
 
 Additional Setup Instructions for Connecting Brownie with Polygon
 
