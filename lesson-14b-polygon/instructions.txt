@@ -1,0 +1,5 @@
+export WEB3_ALCHEMY_PROJECT_ID=<api_key>
+export POLYGONSCAN_TOKEN=<token>
+brownie networks add Polygon polygon host=https://polygon-mainnet.g.alchemy.com/v2/\$WEB3_ALCHEMY_PROJECT_ID chainid=137 name=Polygon
+brownie networks add Development polygon-fork host=http://127.0.0.1 cmd=ganache-cli fork=polygon timeout=120 accounts=10 evm_version=istanbul gas_limit=12000000 mnemonic=brownie port=8545
+
