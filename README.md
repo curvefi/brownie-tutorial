@@ -35,8 +35,8 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 26: Safety](/lesson-26-safety)
 * [Lesson 27: Raw ETH](/lesson-27-raw-eth)
 * [Lesson 28: Routing I](/lesson-28-routing-i)
+* [Lesson 29: Routing II](/lesson-29-routing-ii)
 
 ## In the Oven
-* Advanced Routing
 * React
 * Zappers
