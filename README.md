@@ -4,7 +4,7 @@
 
 Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/playlist?list=PLVOHzVzbg7bFUaOGwN0NOgkTItUAVyBBQ) 
 
-## Ready
+## Main Series
 
 * [Lesson 1: Introduction](/lesson-01-introduction)
 * [Lesson 2: Installation](/lesson-02-installation)
@@ -36,6 +36,10 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 27: Raw ETH](/lesson-27-raw-eth)
 * [Lesson 28: Routing I](/lesson-28-routing-i)
 * [Lesson 29: Routing II](/lesson-29-routing-ii)
+
+## CRVFunder Series
+* [Lesson 1: Pre-Commit](/crvfunder/lesson-01-precommit/)
+
 
 ## In the Oven
 * React
