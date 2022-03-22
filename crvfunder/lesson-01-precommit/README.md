@@ -1,6 +1,6 @@
 # CRVFunder 1: pre-commit
 
-## [🎥 Video 1: Pre-Commit 🎬](https://youtu.be/HZtN3ck_5cs)
+## [🎥 Video 1: Pre-Commit 🎬](https://youtu.be/yfTCF0yVW6k)
 
 The CRVFunder series is a short series exploring using Brownie at an application level.  Specifically, we'll be looking at how Brownie was used to help rapidly prototype the CRVFunder application.  CRVFunder launched a new fundraising gauge type to divert CRV inflation to any cause as voted on by the Curve DAO.
 
