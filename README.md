@@ -39,6 +39,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 
 ## CRVFunder Series
 * [Lesson 1: Pre-Commit](/crvfunder/lesson-01-precommit/)
+* [Lesson 2: Package Manager](/crvfunder/lesson-02-package-manager/)
 
 
 ## In the Oven

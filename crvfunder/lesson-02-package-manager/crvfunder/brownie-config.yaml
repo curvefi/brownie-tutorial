@@ -1,0 +1,4 @@
+autofetch_sources: true
+
+dependencies:
+  - curvefi/curve-dao-contracts@1.3.0
