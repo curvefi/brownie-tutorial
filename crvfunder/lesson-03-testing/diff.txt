@@ -1,0 +1,10 @@
+Files ../lesson-02-package-manager/crvfunder/README.md and crvfunder/README.md differ
+Only in ../lesson-02-package-manager/crvfunder/contracts: CRVFunder.vy
+Only in ../lesson-02-package-manager/crvfunder/contracts: Factory.vy
+Only in crvfunder/contracts: FundraisingGaugeV1.vy
+Only in crvfunder/contracts: GaugeFactoryV1.vy
+Files ../lesson-02-package-manager/crvfunder/scripts/deploy.py and crvfunder/scripts/deploy.py differ
+Only in crvfunder/scripts: deploy_gauge.py
+Files ../lesson-02-package-manager/crvfunder/tests/fixtures/deployments.py and crvfunder/tests/fixtures/deployments.py differ
+Only in ../lesson-02-package-manager/crvfunder/tests: test_user_checkpoint.py
+Only in crvfunder/tests: unitary
