@@ -37,6 +37,7 @@ Companion repository for Curve's [Brownie Tutorial](https://www.youtube.com/play
 * [Lesson 28: Routing I](/lesson-28-routing-i)
 * [Lesson 29: Routing II](/lesson-29-routing-ii)
 * [Lesson 30: Chain History](/lesson-30-chain-history)
+* [Lesson 31: Forked Frontend](/lesson-31-forked-frontend)
 
 ## CRVFunder Series
 * [Lesson 1: Pre-Commit](/crvfunder/lesson-01-precommit/)
