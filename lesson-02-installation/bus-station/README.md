@@ -11,7 +11,7 @@ The problem is it costs $50 to get there, $50 to restake, $50 to withdraw.  Gas 
 
 Our mission is to provide affordable public transportation so everybody can party.  
 
-We're set up a highly gas efficient dumb contracts that do nothing but take money for bus tickets.  At first it's on Ethereum (so maybe $10) but eventually on even cheaper chains.
+We've set up a highly gas efficient dumb contract that does nothing but take money for bus tickets.  At first it's on Ethereum (so maybe $10) but eventually on even cheaper chains.
 
 When we have enough riders for the bus (whatever number makes it gas efficient), we have a "bus driver" contract that spends the gas to transport and stake on everybody's behalf as a group.  Bus driver keeps track of all account gains, and a small percentage goes to the bus driver to fund fees.  If it's rewards type, it's also becomes efficient for the bus driver to claim and potentially restake rewards if applicable (compounding).
 
@@ -27,9 +27,9 @@ Our proof of concept contract is at [contracts/BusStation.sol](contracts/BusStat
 
 Our first destination will be to the gas station to fill up.  It's not sexy, there's nobody in swimsuits yet.  
 
-Nobody will get anything for taking the frst bus trip, except a receipt that proves they were on the first party bus.  It's not much, but at least you can prove you had a fun time.
+Nobody will get anything for taking the first bus trip, except a receipt that proves they were on the first party bus.  It's not much, but at least you can prove you had a fun time.
 
-If the bus successfully makes its frst trip, we'll have a proof of concept.  We'll use the funds to set up infrastructure to build the bus station.  This means...
+If the bus successfully makes its first trip, we'll have a proof of concept.  We'll use the funds to set up infrastructure to build the bus station.  This means...
 
 ## License
 
