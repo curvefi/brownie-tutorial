@@ -11,7 +11,7 @@ The problem is it costs $50 to get there, $50 to restake, $50 to withdraw.  Gas 
 
 Our mission is to provide affordable public transportation so everybody can party.  
 
-We're set up a highly gas efficient dumb contracts that do nothing but take money for bus tickets.  At first it's on Ethereum (so maybe $10) but eventually on even cheaper chains.
+We've set up a highly gas efficient dumb contract that does nothing but take money for bus tickets.  At first it's on Ethereum (so maybe $10) but eventually on even cheaper chains.
 
 When we have enough riders for the bus (whatever number makes it gas efficient), we have a "bus driver" contract that spends the gas to transport and stake on everybody's behalf as a group.  Bus driver keeps track of all account gains, and a small percentage goes to the bus driver to fund fees.  If it's rewards type, it's also becomes efficient for the bus driver to claim and potentially restake rewards if applicable (compounding).
 
